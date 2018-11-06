@@ -16,3 +16,9 @@ def test_mode1():
 
 def test_mode2():
     assert(mode([9, 8, 9, 9, 7, 9, 6, 9, 5, 0, 3, 9 , 6, 8]) == 9)
+
+def test_lowerQuart1():
+    assert(lowerQuart([1, 2, 3, 3, 4, 5, 20, 30, 40, 43]) == 3)
+
+def test_lowerQuart2():
+    assert(lowerQuart([1, 2, 4, 4, 5, 20, 30, 40, 43, 55]) == 4)
