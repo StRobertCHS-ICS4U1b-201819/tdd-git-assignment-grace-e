@@ -12,3 +12,6 @@ def test_median_basic3():
 
 def test_median_basic4():
    assert(median([1, 2, 3, 4]) == 2.5)
+
+
+
