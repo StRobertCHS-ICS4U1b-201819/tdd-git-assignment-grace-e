@@ -7,7 +7,10 @@ def mean(numList):
 
 #  the middle value in a data set that has been arranged in numerical order
 def median(numList):
-   return 4
+   numList.sort()
+   middle = len(numList) // 2
+   med = numList[middle]
+   return med
 
 # is the value that occurs most frequently in the set
 def mode(numList):
