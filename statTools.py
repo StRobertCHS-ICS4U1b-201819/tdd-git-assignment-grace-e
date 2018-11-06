@@ -1,8 +1,13 @@
+import math
+
 # Measures of Central Tendency
 
 # the average value of all the data in the set
 def mean(numList):
-
+    sum = 0
+    for i in range(len(numList)):
+       sum += numList[i]
+    return sum / len(numList)
 
 #  the middle value in a data set that has been arranged in numerical order
 def median(numList):
@@ -10,7 +15,10 @@ def median(numList):
 
 # is the value that occurs most frequently in the set
 def mode(numList):
-   pass
+   most = 0
+   for i in range(len(numList)):
+       if numList.count(numList[i]) > most:
+           most = numList.count(numList[i])
 
 # Measures of Spread
 
