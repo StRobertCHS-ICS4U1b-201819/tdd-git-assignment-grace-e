@@ -9,7 +9,11 @@ def mean(numList):
 def median(numList):
    numList.sort()
    middle = len(numList) // 2
-   med = numList[middle]
+   if(len(numList) % 2 == 0):
+      return (numList[middle] + numList[middle - 1]) / 2
+
+   else:
+      med = numList[middle]
    return med
 
 # is the value that occurs most frequently in the set
