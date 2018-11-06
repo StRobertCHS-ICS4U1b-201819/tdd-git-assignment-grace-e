@@ -9,7 +9,14 @@ def mean(numList):
 def median(numList):
    numList.sort()
    middle = len(numList) // 2
+<<<<<<< HEAD
    if (len(numList) % 2 == 0):
+=======
+   if(len(numList) == 0):
+       return 0
+
+   elif (len(numList) % 2 == 0):
+>>>>>>> d0253eb6b89feeda02401cbc8201d208ee1c14f5
        return (numList[middle] + numList[middle - 1]) / 2
 
    else:
