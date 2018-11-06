@@ -1,4 +1,6 @@
 import pytest
 from statTools import *
 
+def test_median_basic1():
+    assert(median([2, 4, 1, 5, 9]) == 4)
 

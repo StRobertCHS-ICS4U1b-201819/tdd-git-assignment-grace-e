@@ -1,12 +1,13 @@
 # Measures of Central Tendency
+# add comments and docstrings after/ to refactor
 
 # the average value of all the data in the set
 def mean(numList):
-
+   pass
 
 #  the middle value in a data set that has been arranged in numerical order
 def median(numList):
-   pass
+   return 4
 
 # is the value that occurs most frequently in the set
 def mode(numList):
