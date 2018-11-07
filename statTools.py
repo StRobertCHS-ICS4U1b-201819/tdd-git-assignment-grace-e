@@ -39,16 +39,11 @@ def median(numList):
 def range(numList):
    pass
 
-#  the median of the lower half of the data set.
-def lowerQuart(numList):
-   pass
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
    pass
 
-def variance(numList):
-   pass
 
 def stanDev(numList):
    pass
