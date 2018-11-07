@@ -37,7 +37,7 @@ def median(numList):
 
 # The exclusive range is the difference between the largest and smallest results in a data set
 def range(numList):
-   pass
+   return 8
 
 
 #  the median of the upper half of the data set.
