@@ -28,6 +28,9 @@ def test_median_basic4():
 def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
 
+def test_range_basic2():
+   assert(range([2, 4, 0, 6, 1]) == 6)
+
 
 
 
