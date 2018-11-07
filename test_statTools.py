@@ -31,6 +31,8 @@ def test_range_basic1():
 def test_range_basic2():
    assert(range([2, 4, 0, 6, 1]) == 6)
 
+def test_range_basic3():
+   assert(range([2, 7, -3, 6, 1]) == 10)
 
 
 
