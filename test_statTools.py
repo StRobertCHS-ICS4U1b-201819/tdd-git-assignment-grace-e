@@ -37,6 +37,9 @@ def test_range_basic3():
 def test_range_basic4():
    assert(range([-8, -3, -9, -2]) == 7)
 
+def test_upperQuart_basic1():
+    assert(upperQuart([2, 4, 1, 5, 9]) == 5)
+
 
 
 

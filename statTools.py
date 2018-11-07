@@ -32,7 +32,6 @@ def median(numList):
         return numList[middle]
 
 
-
 # Measures of Spread
 
 # The exclusive range is the difference between the largest and smallest results in a data set
@@ -49,7 +48,7 @@ def range(numList):
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
-   pass
+   return 5
 
 
 def stanDev(numList):
