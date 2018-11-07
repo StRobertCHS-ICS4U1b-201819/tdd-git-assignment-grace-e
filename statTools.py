@@ -1,26 +1,37 @@
+"""
+-------------------------------------------------------------------------------
+Name:		statTools.py
+Purpose:
+Statistical functions that are given lists
+
+Author:		E. Shi-Shun, G. Leung
+
+Created:		11/11/2018
+------------------------------------------------------------------------------
+"""
+
+
 # Measures of Central Tendency
 # add comments and docstrings after/ to refactor
 
-# the average value of all the data in the set
-def mean(numList):
-   pass
 
 #  the middle value in a data set that has been arranged in numerical order
 def median(numList):
-   numList.sort()
-   middle = len(numList) // 2
+    '''
+    Find the median of a given list
+    :param numList: list of numbers
+    :return: float median of list
+    '''
+    
+    numList.sort()
+    middle = len(numList) // 2
 
-   if (len(numList) % 2 == 0):
-       return (numList[middle] + numList[middle - 1]) / 2
+    if (len(numList) % 2 == 0):
+        return (numList[middle] + numList[middle - 1]) / 2
+    else:
+        return numList[middle]
 
-   else:
-      med = numList[middle]
 
-   return med
-
-# is the value that occurs most frequently in the set
-def mode(numList):
-   pass
 
 # Measures of Spread
 

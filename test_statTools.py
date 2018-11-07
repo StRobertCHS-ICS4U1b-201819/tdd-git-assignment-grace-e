@@ -1,3 +1,15 @@
+"""
+-------------------------------------------------------------------------------
+Name:		test_statTools.py
+Purpose:
+test statistical functions from statTools.py
+
+Author:		E. Shi-Shun, G. Leung
+
+Created:		11/11/2018
+------------------------------------------------------------------------------
+"""
+
 import pytest
 from statTools import *
 
