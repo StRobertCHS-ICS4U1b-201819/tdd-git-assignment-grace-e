@@ -23,10 +23,15 @@ def mode(numList):
 
 #  the median of the lower half of the data set.
 def lowerQuart(numList):
-   mid = len(numList) // 2
-   newList = numList[:mid]
-   print(newList)
+   numList = sorted(numList)
+   mid = (len(numList) // 2) // 2
+   return numList[mid]
 
 def variance(numList):
-   pass
-
+    acc2 = 0
+    numMean = mean(numList)
+    for i in range(len(numList)):
+        acc2 += (numList[i] - numMean) ** 2
+    x = acc2 / len(numList)
+    rounded = "{0:0.3f}".format(x)
+    return float(rounded)
