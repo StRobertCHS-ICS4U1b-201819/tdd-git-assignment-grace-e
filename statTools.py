@@ -52,14 +52,18 @@ def upperQuart(numList):
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
     else:
-        numList.sort()
-        mid = len(numList) // 2
-        half = numList[mid:]
-        quart = len(half) // 2
-        if (len(half) % 2 == 0):
-            return (half[quart] + half[quart - 1]) / 2
-        else:
-            return half[quart]
+        try:
+            numList.sort()
+            mid = len(numList) // 2
+            half = numList[mid:]
+            quart = len(half) // 2
+            if (len(half) % 2 == 0):
+                return (half[quart] + half[quart - 1]) / 2
+            else:
+                return half[quart]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
 
 
 def stanDev(numList):

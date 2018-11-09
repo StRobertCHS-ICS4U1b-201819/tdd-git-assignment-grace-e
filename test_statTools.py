@@ -57,6 +57,10 @@ def test_upperQuart_empty():
    with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
    assert ("Illegal empty list" == str(emptyerrmsg.value))
 
+def test_upperQuart_input():
+   with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
+   assert ("Please provide numbers only" == str(inputerrmsg.value))
+
 
 
 
