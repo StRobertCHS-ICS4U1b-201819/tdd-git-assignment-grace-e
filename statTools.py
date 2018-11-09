@@ -49,18 +49,21 @@ def range(numList):
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
+    '''
+    Find the upper quartile of a given list
+
+    :param numList: list of numbers
+    :return: float upper quartile of list
+    '''
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
+
     else:
         try:
             numList.sort()
-            mid = len(numList) // 2
-            half = numList[mid:]
-            quart = len(half) // 2
-            if (len(half) % 2 == 0):
-                return (half[quart] + half[quart - 1]) / 2
-            else:
-                return half[quart]
+            half = numList[len(numList) // 2:]
+            return median(half)
+
         except TypeError:
             raise TypeError("Please provide numbers only")
 
