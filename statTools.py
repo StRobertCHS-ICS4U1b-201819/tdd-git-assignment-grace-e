@@ -26,8 +26,9 @@ def median(numList):
     numList.sort()
     middle = len(numList) // 2
 
-    if (len(numList) % 2 == 0):
+    if(len(numList) % 2 == 0):
         return (numList[middle] + numList[middle - 1]) / 2
+
     else:
         return numList[middle]
 
@@ -48,7 +49,13 @@ def range(numList):
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
-   return 5
+    numList.sort()
+    mid = len(numList) // 2
+    half = numList[mid:]
+    print (half)
+    quart = len(half) // 2
+    return half[quart]
+
 
 
 def stanDev(numList):

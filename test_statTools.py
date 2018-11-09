@@ -25,6 +25,7 @@ def test_median_basic3():
 def test_median_basic4():
    assert(median([1, 2, 3, 4]) == 2.5)
 
+
 def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
 
@@ -34,12 +35,14 @@ def test_range_basic2():
 def test_range_basic3():
    assert(range([2, 7, -3, 6, 1]) == 10)
 
-def test_range_basic4():
+def test_range_basic4_neg():
    assert(range([-8, -3, -9, -2]) == 7)
 
 def test_upperQuart_basic1():
     assert(upperQuart([2, 4, 1, 5, 9]) == 5)
 
+def test_upperQuart_basic2():
+   assert(upperQuart([2, 4, 0, 6, 1]) == 4)
 
 
 
