@@ -49,15 +49,17 @@ def range(numList):
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
-
-    numList.sort()
-    mid = len(numList) // 2
-    half = numList[mid:]
-    quart = len(half) // 2
-    if (len(half) % 2 == 0):
-        return (half[quart] + half[quart - 1]) / 2
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
     else:
-        return half[quart]
+        numList.sort()
+        mid = len(numList) // 2
+        half = numList[mid:]
+        quart = len(half) // 2
+        if (len(half) % 2 == 0):
+            return (half[quart] + half[quart - 1]) / 2
+        else:
+            return half[quart]
 
 
 def stanDev(numList):

@@ -53,6 +53,9 @@ def test_upperQuart_basic4():
 def test_upperQuart_basic5():
    assert(upperQuart([2, 4, 1, 6]) == 5)
 
+def test_upperQuart_empty():
+   with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
+   assert ("Illegal empty list" == str(emptyerrmsg.value))
 
 
 
