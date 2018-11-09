@@ -26,14 +26,17 @@ def median(numList):
         raise ValueError("Illegal empty list")
 
     else:
-        numList.sort()
-        middle = len(numList) // 2
+        try:
+            numList.sort()
+            middle = len(numList) // 2
 
-        if(len(numList) % 2 == 0):
-            return (numList[middle] + numList[middle - 1]) / 2
+            if(len(numList) % 2 == 0):
+                return (numList[middle] + numList[middle - 1]) / 2
 
-        else:
-            return numList[middle]
+            else:
+                return numList[middle]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
 
 
 # Measures of Spread

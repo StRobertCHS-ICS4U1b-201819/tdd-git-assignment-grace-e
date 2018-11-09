@@ -29,6 +29,12 @@ def test_median_empty():
    with pytest.raises(ValueError) as emptyerrmsg: median([])
    assert ("Illegal empty list" == str(emptyerrmsg.value))
 
+def test_median_input():
+   with pytest.raises(TypeError) as inputerrmsg: median(["no", "hi!"])
+   assert ("Please provide numbers only" == str(inputerrmsg.value))
+
+
+
 def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
 
@@ -40,6 +46,9 @@ def test_range_basic3():
 
 def test_range_basic4_neg():
    assert(range([-8, -3, -9, -2]) == 7)
+
+
+
 
 def test_upperQuart_basic1():
     assert(upperQuart([2, 4, 1, 5, 9]) == 5)
