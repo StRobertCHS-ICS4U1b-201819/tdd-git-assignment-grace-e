@@ -49,6 +49,7 @@ def range(numList):
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
+
     numList.sort()
     mid = len(numList) // 2
     half = numList[mid:]

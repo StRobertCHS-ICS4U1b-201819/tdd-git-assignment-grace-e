@@ -45,10 +45,12 @@ def test_upperQuart_basic2():
    assert(upperQuart([2, 4, 0, 6, 1]) == 4)
 
 def test_upperQuart_basic3():
-   assert(upperQuart([2, 4, 1, 6]) == 4)
+   assert(upperQuart([2, 4, 1, 6, 0, 7]) == 6)
 
 def test_upperQuart_basic4():
    assert(upperQuart([3, 4, 1, 7, 8, 6]) == 7)
+
+
 
 
 
