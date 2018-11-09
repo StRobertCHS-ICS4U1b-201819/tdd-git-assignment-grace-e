@@ -52,10 +52,8 @@ def upperQuart(numList):
     numList.sort()
     mid = len(numList) // 2
     half = numList[mid:]
-    print (half)
     quart = len(half) // 2
     return half[quart]
-
 
 
 def stanDev(numList):
