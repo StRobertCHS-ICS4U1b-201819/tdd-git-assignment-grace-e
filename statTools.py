@@ -22,15 +22,18 @@ def median(numList):
     :param numList: list of ints
     :return: float median of list
     '''
-
-    numList.sort()
-    middle = len(numList) // 2
-
-    if(len(numList) % 2 == 0):
-        return (numList[middle] + numList[middle - 1]) / 2
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
 
     else:
-        return numList[middle]
+        numList.sort()
+        middle = len(numList) // 2
+
+        if(len(numList) % 2 == 0):
+            return (numList[middle] + numList[middle - 1]) / 2
+
+        else:
+            return numList[middle]
 
 
 # Measures of Spread

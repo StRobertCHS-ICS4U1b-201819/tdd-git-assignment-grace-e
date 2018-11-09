@@ -25,6 +25,9 @@ def test_median_basic3():
 def test_median_basic4():
    assert(median([1, 2, 3, 4]) == 2.5)
 
+def test_median_empty():
+   with pytest.raises(ValueError) as emptyerrmsg: median([])
+   assert ("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
