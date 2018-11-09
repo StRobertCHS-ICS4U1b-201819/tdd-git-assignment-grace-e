@@ -22,7 +22,7 @@ def median(numList):
     :param numList: list of ints
     :return: float median of list
     '''
-    
+
     numList.sort()
     middle = len(numList) // 2
 
@@ -54,7 +54,10 @@ def upperQuart(numList):
     mid = len(numList) // 2
     half = numList[mid:]
     quart = len(half) // 2
-    return half[quart]
+    if (len(half) % 2 == 0):
+        return (half[quart] + half[quart - 1]) / 2
+    else:
+        return half[quart]
 
 
 def stanDev(numList):
