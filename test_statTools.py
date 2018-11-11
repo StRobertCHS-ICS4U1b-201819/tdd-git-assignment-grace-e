@@ -84,13 +84,13 @@ def test_upperQuart_input():
 # standard deviation tests
 
 def test_stanDev_basic1():
-    assert(stanDev([2, 4, 7, 8, 9]) == 2.608)
+    assert(stanDev([2, 4, 7, 8, 9]) == 2.61)
 
 def test_stanDev_basic2():
     assert(stanDev([3, 5, 8, 9, 1, 0]) == 3.35)
 
 def test_stanDev_basic3():
-    assert(stanDev([-2, -4, 6, -7, 9]) == 6.086)
+    assert(stanDev([-2, -4, 6, -7, 9]) == 6.09)
 
 def test_stanDev_one():
     assert(stanDev([10]) == 0)

@@ -83,17 +83,24 @@ def upperQuart(numList):
 
 
 def stanDev(numList):
+    '''
+    solve for the standard deviation of a given list
+
+    :param numList: list of numbers
+    :return: float standard deviation of list
+    '''
+
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
     else:
         try:
             mean = sum(numList) / len(numList)
-            meanDiff = []
+            meanDiff = 0
 
             for i in numList:
-                meanDiff.append((mean - i) ** 2)
+                meanDiff += ((mean - i) ** 2)
 
-            return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
+            return round(math.sqrt(meanDiff / len(numList)), 2)
         except TypeError:
             raise TypeError("Please provide numbers only")
 
