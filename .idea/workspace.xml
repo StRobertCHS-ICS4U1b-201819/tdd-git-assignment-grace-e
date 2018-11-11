@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74624a6e-78da-4ad9-83d3-e65af8850f16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/statTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_statTools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tdd-git-assignment-grace-e.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tdd-git-assignment-grace-e.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,15 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$statTools.coverage" NAME="statTools Coverage Results" MODIFIED="1541776017200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic5.coverage" NAME="pytest for test_statTools.test_upperQuart_basic5 Coverage Results" MODIFIED="1541776724057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic2.coverage" NAME="pytest for test_statTools.test_upperQuart_basic2 Coverage Results" MODIFIED="1541776043166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_in_test_statTools_py.coverage" NAME="pytest in test_statTools.py Coverage Results" MODIFIED="1541779512827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_in_test_statTools_py.coverage" NAME="pytest in test_statTools.py Coverage Results" MODIFIED="1541909998732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_median_basic3.coverage" NAME="pytest for test_statTools.test_median_basic3 Coverage Results" MODIFIED="1541776273006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$statTools.coverage" NAME="statTools Coverage Results" MODIFIED="1541776017200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic4.coverage" NAME="pytest for test_statTools.test_upperQuart_basic4 Coverage Results" MODIFIED="1541777297661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_empty.coverage" NAME="pytest for test_statTools.test_upperQuart_empty Coverage Results" MODIFIED="1541776779476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic1.coverage" NAME="pytest for test_statTools.test_upperQuart_basic1 Coverage Results" MODIFIED="1541776049917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic3.coverage" NAME="pytest for test_statTools.test_upperQuart_basic3 Coverage Results" MODIFIED="1541777125240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic4.coverage" NAME="pytest for test_statTools.test_upperQuart_basic4 Coverage Results" MODIFIED="1541777297661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_median_basic3.coverage" NAME="pytest for test_statTools.test_median_basic3 Coverage Results" MODIFIED="1541776273006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_grace_e$pytest_for_test_statTools_test_upperQuart_basic5.coverage" NAME="pytest for test_statTools.test_upperQuart_basic5 Coverage Results" MODIFIED="1541776724057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-783994511">
@@ -63,21 +64,22 @@
     <session id="-1282791790">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="62" />
+          <entry key="Python" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="62" />
+          <entry key="py" value="65" />
         </counts>
       </usages-collector>
     </session>
@@ -90,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+            <state relative-caret-position="-180">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#301#314#0" expanded="true" />
               </folding>
@@ -102,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -126,8 +128,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/statTools.py" />
         <option value="$PROJECT_DIR$/test_statTools.py" />
+        <option value="$PROJECT_DIR$/statTools.py" />
       </list>
     </option>
   </component>
@@ -137,15 +139,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1346" />
-    <option name="height" value="697" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="6" />
+    <option name="width" value="944" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +161,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,18 +293,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 10h 53m 21s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 10h 55m 08s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 10h 56m 55s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 10h 59m 03s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 10h 59m 32s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
@@ -320,6 +311,18 @@
     <history-entry file="pytest_in_test_statTools_py - 2018.11.09 at 11h 04m 14s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.10 at 22h 54m 50s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.10 at 22h 59m 44s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.10 at 23h 13m 45s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.10 at 23h 20m 02s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,15 +334,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1372" height="740" extended-state="6" />
+    <frame x="6" y="0" width="944" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49746192" visible="true" weight="0.36535552" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49746192" visible="true" weight="0.24321267" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.36535552" />
-      <window_info id="Favorites" order="2" sideWeight="0.5025381" side_tool="true" visible="true" weight="0.36535552" />
+      <window_info id="Favorites" order="2" sideWeight="0.5025381" side_tool="true" weight="0.36535552" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35620916" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36313617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989455" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,15 +401,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        <state relative-caret-position="-180">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#301#314#0" expanded="true" />
           </folding>
