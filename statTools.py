@@ -34,12 +34,20 @@ def median(numList):
 
 # is the value that occurs most frequently in the set
 def mode(numList):
-   most = 0
-   for i in range(len([numList])):
-        if numList.count(numList[i]) > most:
-            most = numList[i]
-   return most
-
+   y = 0
+   most = []
+   for i in range(len(numList)):
+        if numList.count(numList[i]) > y:
+            y = numList.count(numList[i])
+            most = []
+            most.append(numList[i])
+        elif numList.count(numList[i]) == y and numList[i] not in most:
+            most.append(numList[i])
+   if len(most) == 1:
+       return most[0]
+   else:
+       return most
+print(mode([1, 1, 2, 3, 4, 4, 4, 4]))
 # Measures of Spread
 
 #  the median of the lower half of the data set.

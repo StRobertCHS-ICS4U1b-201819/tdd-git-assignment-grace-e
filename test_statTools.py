@@ -23,8 +23,11 @@ def test_mode1():
 def test_mode2():
     assert(mode([9, 8, 9, 9, 7, 9, 6, 9, 5, 0, 3, 9, 6, 8]) == 9)
 
+def test_mode3():
+    assert(mode([1, 1, 2, 3, 4, 4, 4]) == 4)
+
 def test_more_than_one_modes():
-    assert(mode([1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == [1, 2, 3, 4, 12])
+    assert(mode([0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == [2, 3, 4, 12])
 
 def test_lowerQuart1():
     assert(lowerQuart([1, 2, 3, 4, 4, 5, 20, 30, 40, 43]) == 3)
