@@ -86,6 +86,8 @@ def test_stanDev_basic1():
 def test_stanDev_basic2():
     assert(stanDev([3, 5, 8, 9, 1, 0]) == 3.35)
 
+def test_stanDev_basic3():
+    assert(stanDev([-2, -4, 6, -7, 9]) == 6.086)
 
 
 
