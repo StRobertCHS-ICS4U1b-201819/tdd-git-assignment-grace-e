@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------
 Name:		statTools.py
 Purpose:
-Statistical functions that are given lists
+Statistical functions run on given lists
 
 Author:		E. Shi-Shun, G. Leung
 
@@ -19,36 +19,64 @@ Created:		11/11/2018
 def median(numList):
     '''
     Find the median of a given list
-    :param numList: list of numbers
+    :param numList: list of ints
     :return: float median of list
     '''
-    
-    numList.sort()
-    middle = len(numList) // 2
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
 
-    if (len(numList) % 2 == 0):
-        return (numList[middle] + numList[middle - 1]) / 2
     else:
-        return numList[middle]
+        try:
+            numList.sort()
+            middle = len(numList) // 2
 
+            if(len(numList) % 2 == 0):
+                return (numList[middle] + numList[middle - 1]) / 2
+
+            else:
+                return numList[middle]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
 
 
 # Measures of Spread
 
 # The exclusive range is the difference between the largest and smallest results in a data set
 def range(numList):
-   pass
+    '''
+    Find range of a given list
 
-#  the median of the lower half of the data set.
-def lowerQuart(numList):
-   pass
+    :param numList: list of ints
+    :return: float range of list
+    '''
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+    else:
+        numList.sort()
+        return numList[-1] - numList[0]
+
 
 #  the median of the upper half of the data set.
 def upperQuart(numList):
-   pass
+    '''
+    Find the upper quartile of a given list
 
-def variance(numList):
-   pass
+    :param numList: list of numbers
+    :return: float upper quartile of list
+    '''
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+
+    else:
+        try:
+            numList.sort()
+            half = numList[len(numList) // 2:]
+            return median(half)
+
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
+
 
 def stanDev(numList):
    pass
