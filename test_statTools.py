@@ -99,3 +99,7 @@ def test_stanDev_empty():
     with pytest.raises(ValueError) as errmsg: stanDev([])
     assert("Illegal empty list" == str(errmsg.value))
 
+def test_staDev_input():
+    with pytest.raises(TypeError) as errmsg: stanDev(["yes", "no", "maybe"])
+    assert("Please provide numbers only" == str(errmsg.value))
+

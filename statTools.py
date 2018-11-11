@@ -86,13 +86,16 @@ def stanDev(numList):
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
     else:
-        mean = sum(numList) / len(numList)
-        meanDiff = []
-    
-        for i in numList:
-            meanDiff.append((mean - i) ** 2)
+        try:
+            mean = sum(numList) / len(numList)
+            meanDiff = []
 
-        return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
+            for i in numList:
+                meanDiff.append((mean - i) ** 2)
+
+            return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
+        except TypeError:
+            raise TypeError("Please provide numbers only")
 
 
 
