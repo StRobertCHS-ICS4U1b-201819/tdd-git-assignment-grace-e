@@ -8,7 +8,7 @@ def mean(numList):
         sum = 0
         for i in range(len(numList)):
            sum += numList[i]
-        return sum / len(numList)
+        return round(sum / len(numList), 5)
     except TypeError:
         return "Must be list of numbers"
     except:

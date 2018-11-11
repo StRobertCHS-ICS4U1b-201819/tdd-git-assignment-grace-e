@@ -7,6 +7,9 @@ def test_mean1():
 def test_mean2():
     assert(mean([5, 5, 4, 54, 3, 1, 10, 7, 9, 2]) == 10)
 
+def test_mean3():
+    assert(mean([8, 7, 6, 8, 9, 10, 12, 30, 12, 24, 50, 30, 11]) == 16.69231)
+
 def test_mean_emptyList():
     assert(mean([]) == "An error has occurred")
 
