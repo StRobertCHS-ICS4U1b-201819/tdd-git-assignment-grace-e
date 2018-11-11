@@ -4,7 +4,11 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7" project-jdk-type="Python SDK" />
+<<<<<<< HEAD
   <component name="PyPackaging">
     <option name="earlyReleasesAsUpgrades" value="true" />
   </component>
 </project>
+=======
+</project> 
+>>>>>>> 01d1fea8fe562995c23d5c9f88333e922a15042f
