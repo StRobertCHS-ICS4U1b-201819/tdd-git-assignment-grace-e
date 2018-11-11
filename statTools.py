@@ -11,8 +11,6 @@ def mean(numList):
         return sum / len(numList)
     except TypeError:
         return "Must be list of numbers"
-    except NameError:
-        return "Variables have not been initialized"
     except:
         return "An error has occurred"
 
@@ -34,20 +32,26 @@ def median(numList):
 
 # is the value that occurs most frequently in the set
 def mode(numList):
-   y = 0
-   most = []
-   for i in range(len(numList)):
-        if numList.count(numList[i]) > y:
-            y = numList.count(numList[i])
-            most = []
-            most.append(numList[i])
-        elif numList.count(numList[i]) == y and numList[i] not in most:
-            most.append(numList[i])
-   if len(most) == 1:
-       return most[0]
-   else:
-       return most
-print(mode([1, 1, 2, 3, 4, 4, 4, 4]))
+   try:
+       y = 0
+       most = []
+       for i in range(len(numList)):
+            if numList.count(numList[i]) > y:
+                y = numList.count(float(numList[i]))
+                most = []
+                most.append(float(numList[i]))
+            elif numList.count(numList[i]) == y and numList[i] not in most:
+                most.append(float(numList[i]))
+       if len(most) <= 1:
+           return most[0]
+       else:
+           return "There are multiple modes"
+   except ValueError:
+       return "Must be list of numbers"
+   except:
+       return "An error has occurred"
+print(mode(['h', 'i']))
+
 # Measures of Spread
 
 #  the median of the lower half of the data set.

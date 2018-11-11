@@ -26,8 +26,18 @@ def test_mode2():
 def test_mode3():
     assert(mode([1, 1, 2, 3, 4, 4, 4]) == 4)
 
+def test_mode_empty():
+    assert(mode([]) == "An error has occurred")
+
+def test_mode_letters():
+    assert(mode(['h', 'i']) == "Must be list of numbers")
+
+def test_mode_variable():
+    with pytest.raises(NameError):
+        assert(mode([e, n]) == "Variables have not been initialized")
+
 def test_more_than_one_modes():
-    assert(mode([0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == [2, 3, 4, 12])
+    assert(mode([0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == "There are multiple modes")
 
 def test_lowerQuart1():
     assert(lowerQuart([1, 2, 3, 4, 4, 5, 20, 30, 40, 43]) == 3)
