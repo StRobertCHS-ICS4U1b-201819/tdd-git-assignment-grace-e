@@ -27,11 +27,11 @@ def test_median_basic4():
 
 def test_median_empty():
    with pytest.raises(ValueError) as emptyerrmsg: median([])
-   assert ("Illegal empty list" == str(emptyerrmsg.value))
+   assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_median_input():
    with pytest.raises(TypeError) as inputerrmsg: median(["no", "hi!"])
-   assert ("Please provide numbers only" == str(inputerrmsg.value))
+   assert("Please provide numbers only" == str(inputerrmsg.value))
 
 
 
@@ -49,7 +49,7 @@ def test_range_basic4_neg():
 
 def test_range_empty():
    with pytest.raises(ValueError) as emptyerrmsg: range([])
-   assert ("Illegal empty list" == str(emptyerrmsg.value))
+   assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_range_input():
     with pytest.raises(TypeError) as inputerrmsg: range(["hi", "hello", "hey"])
@@ -74,12 +74,14 @@ def test_upperQuart_basic5():
 
 def test_upperQuart_empty():
    with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
-   assert ("Illegal empty list" == str(emptyerrmsg.value))
+   assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_upperQuart_input():
    with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
-   assert ("Please provide numbers only" == str(inputerrmsg.value))
+   assert("Please provide numbers only" == str(inputerrmsg.value))
 
+def test_stanDev_basic1():
+    assert(stanDev([2, 4, 7, 8, 9]) == 2.608)
 
 
 

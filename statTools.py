@@ -10,6 +10,7 @@ Created:		11/11/2018
 ------------------------------------------------------------------------------
 """
 
+import math
 
 # Measures of Central Tendency
 # add comments and docstrings after/ to refactor
@@ -38,7 +39,6 @@ def median(numList):
                 return numList[middle]
         except TypeError:
             raise TypeError("Please provide numbers only")
-
 
 # Measures of Spread
 
@@ -83,6 +83,13 @@ def upperQuart(numList):
 
 
 def stanDev(numList):
-   pass
+   mean = sum(numList) / len(numList)
+   meanDiff = []
+
+   for i in numList:
+    meanDiff.append((mean - i) ** 2)
+
+   return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
+
 
 
