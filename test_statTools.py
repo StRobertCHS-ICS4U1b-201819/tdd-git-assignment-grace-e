@@ -83,6 +83,8 @@ def test_upperQuart_input():
 def test_stanDev_basic1():
     assert(stanDev([2, 4, 7, 8, 9]) == 2.608)
 
+def test_stanDev_basic2():
+    assert(stanDev([3, 5, 8, 9, 1, 0]) == 3.35)
 
 
 

@@ -83,13 +83,13 @@ def upperQuart(numList):
 
 
 def stanDev(numList):
-   mean = sum(numList) / len(numList)
-   meanDiff = []
+    mean = sum(numList) / len(numList)
+    meanDiff = []
 
-   for i in numList:
-    meanDiff.append((mean - i) ** 2)
+    for i in numList:
+        meanDiff.append((mean - i) ** 2)
 
-   return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
+    return round(math.sqrt(sum(meanDiff) / len(meanDiff)), 3)
 
 
 
