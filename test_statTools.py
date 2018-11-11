@@ -41,6 +41,15 @@ def test_mode2():
 def test_mode3():
     assert(mode([1, 1, 2, 3, 4, 4, 4]) == 4)
 
+def test_mode4():
+    assert(mode([-1, -2, -1, -2, -2, 3, 3, 9]) == -2)
+
+def test_modeSingle():
+    assert(mode([8]) == 8)
+
+def test_mode_noList():
+    assert(mode(8) == "An error has occurred")
+
 def test_mode_empty():
     assert(mode([]) == "An error has occurred")
 
