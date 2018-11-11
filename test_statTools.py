@@ -10,11 +10,23 @@ def test_mean2():
 def test_mean3():
     assert(mean([8, 7, 6, 8, 9, 10, 12, 30, 12, 24, 50, 30, 11]) == 16.69231)
 
+def test_mean4():
+    assert(mean([100, 30, 20, 60, 44, 66, 55, 22, 1, 2, 3, 4]) == 33.91667)
+
+def test_mean5():
+    assert(mean([1.2, 3.4, 5.6, 7.8, 7.6, 9.1, 12.2]) == 6.7)
+
+def test_mean6():
+    assert(mean([1.4, 50, 10000, 500, 6.6, 1.1, 3.3, 6.5]) == 1321.1125)
+
+def test_mean_negative():
+    assert(mean([-3, -6, -2, -4, -4.3, -10.1, 8]) == -3.05714 )
+
 def test_mean_emptyList():
-    assert(mean([]) == "An error has occurred")
+    assert(mean([]) == "The list length is zero")
 
 def test_mean_letters():
-    assert(mean(['h', 'e', 'l', 'l', 'o']) == "Must be list of numbers")
+    assert(mean(['h', 3, 1, 2, 0]) == "Must be list of numbers")
 
 def test_mean_variable():
     with pytest.raises(NameError):
@@ -68,7 +80,7 @@ def test_variance2():
     assert(variance([0, 4, 4, 7, 7, 7, 8, 8, 8, 9, 9, 11, 11, 11]) == 8.816)
 
 def test_variance_empty():
-    assert(variance([]) == "An error has occurred")
+    assert(variance([]) == "The list length is zero")
 
 def test_variance_letters():
     assert(variance(['h', 'e', 'n', 'y', 'l', 'o']) == "Must be list of numbers")

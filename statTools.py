@@ -11,6 +11,8 @@ def mean(numList):
         return round(sum / len(numList), 5)
     except TypeError:
         return "Must be list of numbers"
+    except ZeroDivisionError:
+        return "The list length is zero"
     except:
         return "An error has occurred"
 
@@ -75,5 +77,5 @@ def variance(numList):
         return float(rounded)
     except TypeError:
         return "Must be list of numbers"
-    except:
-        return "An error has occurred"
+    except ZeroDivisionError:
+        return "The list length is zero"
