@@ -45,6 +45,19 @@ def test_lowerQuart1():
 def test_lowerQuart2():
     assert(lowerQuart([1, 65, 67, 20, 4, 5, 68, 30, 40, 55, 43, 4, 2]) == 4)
 
+def test_lowerQuart3():
+    assert(lowerQuart([1, 2, 3, 4]) == 1.5)
+
+def test_lowerQuart_empty():
+    assert(lowerQuart([]) == "An error has occurred")
+
+def test_lowerQuart_letters():
+    assert(lowerQuart(['h', 'e', 'y', 'o']) == "Must be list of numbers")
+
+def test_lowerQuart_variable():
+    with pytest.raises(NameError):
+        assert(lowerQuart([l, q]) == "Variables have not been initialized")
+
 def test_variance1():
     assert(variance([3, 4, 5, 5, 6, 7, 9]) == 3.388)
 

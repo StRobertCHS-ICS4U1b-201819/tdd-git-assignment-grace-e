@@ -50,16 +50,20 @@ def mode(numList):
        return "Must be list of numbers"
    except:
        return "An error has occurred"
-print(mode(['h', 'i']))
 
 # Measures of Spread
 
 #  the median of the lower half of the data set.
 def lowerQuart(numList):
-   numList.sort()
-   mid = round(round((len(numList) / 2)) / 2)
-   return numList[mid]
-
+   try:
+       numList.sort()
+       mid = round((len(numList) / 2))
+       return median(numList[:mid])
+   except TypeError:
+       return "Must be list of numbers"
+   except:
+       return "An error has occurred"
+print(lowerQuart(['h', 'e', 'y', 'o']))
 
 def variance(numList):
     acc2 = 0
