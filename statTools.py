@@ -52,8 +52,11 @@ def range(numList):
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
     else:
-        numList.sort()
-        return numList[-1] - numList[0]
+        try:
+            numList.sort()
+            return numList[-1] - numList[0]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
 
 
 #  the median of the upper half of the data set.
