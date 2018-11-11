@@ -12,6 +12,7 @@ Created:		11/11/2018
 
 import pytest
 from statTools import *
+# median tests
 
 def test_median_basic1():
     assert(median([2, 4, 1, 5, 9]) == 4)
@@ -33,7 +34,7 @@ def test_median_input():
    with pytest.raises(TypeError) as inputerrmsg: median(["no", "hi!"])
    assert("Please provide numbers only" == str(inputerrmsg.value))
 
-
+#range tests
 
 def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
@@ -55,7 +56,7 @@ def test_range_input():
     with pytest.raises(TypeError) as inputerrmsg: range(["hi", "hello", "hey"])
     assert("Please provide numbers only" == str(inputerrmsg.value))
     
-    
+# upper quartile tests
 
 def test_upperQuart_basic1():
     assert(upperQuart([2, 4, 1, 5, 9]) == 5)
@@ -80,6 +81,8 @@ def test_upperQuart_input():
    with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
    assert("Please provide numbers only" == str(inputerrmsg.value))
 
+# standard deviation tests
+
 def test_stanDev_basic1():
     assert(stanDev([2, 4, 7, 8, 9]) == 2.608)
 
@@ -89,5 +92,10 @@ def test_stanDev_basic2():
 def test_stanDev_basic3():
     assert(stanDev([-2, -4, 6, -7, 9]) == 6.086)
 
+def test_stanDev_one():
+    assert(stanDev([10]) == 0)
 
+def test_stanDev_empty():
+    with pytest.raises(ValueError) as errmsg: stanDev([])
+    assert("Illegal empty list" == str(errmsg.value))
 
