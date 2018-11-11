@@ -44,7 +44,7 @@ def median(numList):
 # The exclusive range is the difference between the largest and smallest results in a data set
 def range(numList):
     '''
-    Find range of a given list
+    Fail range empty test
 
     :param numList: list of ints
     :return: float range of list
