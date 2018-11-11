@@ -63,13 +63,17 @@ def lowerQuart(numList):
        return "Must be list of numbers"
    except:
        return "An error has occurred"
-print(lowerQuart(['h', 'e', 'y', 'o']))
 
 def variance(numList):
-    acc2 = 0
-    numMean = mean(numList)
-    for i in range(len(numList)):
-        acc2 += (numList[i] - numMean) ** 2
-    x = acc2 / len(numList)
-    rounded = "{0:0.3f}".format(x)
-    return float(rounded)
+    try:
+        acc2 = 0
+        numMean = mean(numList)
+        for i in range(len(numList)):
+            acc2 += (numList[i] - numMean) ** 2
+        x = acc2 / len(numList)
+        rounded = "{0:0.3f}".format(x)
+        return float(rounded)
+    except TypeError:
+        return "Must be list of numbers"
+    except:
+        return "An error has occurred"

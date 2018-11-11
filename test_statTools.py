@@ -64,4 +64,13 @@ def test_variance1():
 def test_variance2():
     assert(variance([0, 4, 4, 7, 7, 7, 8, 8, 8, 9, 9, 11, 11, 11]) == 8.816)
 
+def test_variance_empty():
+    assert(variance([]) == "An error has occurred")
+
+def test_variance_letters():
+    assert(variance(['h', 'e', 'n', 'y', 'l', 'o']) == "Must be list of numbers")
+
+def test_variance_variable():
+    with pytest.raises(NameError):
+        assert(variance([d, _]) == "Variables have not been initialized")
 
