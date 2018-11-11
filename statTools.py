@@ -1,5 +1,5 @@
-# Video must show red-green-blue parts, git commits are in present tense, fill out the coluumn, want some tests to fail
-
+# Video must show red-green-blue parts, git commits are in present tense, fill out the column, want some tests to fail
+# commit after every test
 # Measures of Central Tendency
 
 # the average value of all the data in the set
