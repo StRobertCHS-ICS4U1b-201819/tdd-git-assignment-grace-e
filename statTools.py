@@ -13,7 +13,6 @@ Created:		11/11/2018
 import math
 
 # Measures of Central Tendency
-# add comments and docstrings after/ to refactor
 
 
 #  the middle value in a data set that has been arranged in numerical order
@@ -32,9 +31,11 @@ def median(numList):
             numList.sort()
             middle = len(numList) // 2
 
+            #if list is even then find the midpoint of the two middle numbers
             if(len(numList) % 2 == 0):
                 return (numList[middle] + numList[middle - 1]) / 2
 
+            # return the number in the middle of the ordered list
             else:
                 return numList[middle]
         except TypeError:
@@ -55,6 +56,7 @@ def range(numList):
     else:
         try:
             numList.sort()
+            # return the difference between the highest and lowest number
             return numList[-1] - numList[0]
         except TypeError:
             raise TypeError("Please provide numbers only")
@@ -74,7 +76,9 @@ def upperQuart(numList):
     else:
         try:
             numList.sort()
+            # use only the last half of the list
             half = numList[len(numList) // 2:]
+            # return the median of the upper half of the list
             return median(half)
 
         except TypeError:
@@ -97,12 +101,12 @@ def stanDev(numList):
             mean = sum(numList) / len(numList)
             meanDiff = 0
 
+            # find the sum of the squares of the differences between the list elements and the mean
             for i in numList:
                 meanDiff += ((mean - i) ** 2)
 
+            # return the squareroot of the mean of the total
             return round(math.sqrt(meanDiff / len(numList)), 2)
         except TypeError:
             raise TypeError("Please provide numbers only")
-
-
 

@@ -26,6 +26,9 @@ def test_median_basic3():
 def test_median_basic4():
    assert(median([1, 2, 3, 4]) == 2.5)
 
+def test_median_one():
+   assert(median([1]) == 1)
+
 def test_median_empty():
    with pytest.raises(ValueError) as emptyerrmsg: median([])
    assert("Illegal empty list" == str(emptyerrmsg.value))
@@ -47,6 +50,9 @@ def test_range_basic3():
 
 def test_range_basic4_neg():
    assert(range([-8, -3, -9, -2]) == 7)
+
+def test_range_one():
+   assert (range([1]) == 0)
 
 def test_range_empty():
    with pytest.raises(ValueError) as emptyerrmsg: range([])
@@ -72,6 +78,9 @@ def test_upperQuart_basic4():
 
 def test_upperQuart_basic5():
    assert(upperQuart([2, 4, 1, 6]) == 5)
+
+def test_upperQuart_one():
+   assert(upperQuart([1]) == 1)
 
 def test_upperQuart_empty():
    with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
