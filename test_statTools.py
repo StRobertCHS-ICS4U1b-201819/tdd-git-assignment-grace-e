@@ -93,6 +93,9 @@ def test_upperQuart_basic4():
 def test_upperQuart_basic5():
    assert(upperQuart([2, 4, 1, 6]) == 5)
 
+def test_upperQuart_basic6():
+   assert(upperQuart([0.2, 4, 1, 6000200, 5]) == 5)
+
 def test_upperQuart_one():
    assert(upperQuart([1]) == 1)
 
