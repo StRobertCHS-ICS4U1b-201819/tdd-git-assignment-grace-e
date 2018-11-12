@@ -119,29 +119,7 @@ def range(numList):
         except TypeError:
             raise TypeError("Please provide numbers only")
 
-
-#  the median of the upper half of the data set.
-def upperQuart(numList):
-    '''
-    :param numList: list of numbers
-    :return: float upper quartile of list
-    '''
-
-    if len(numList) == 0:
-        raise ValueError("Illegal empty list")
-
-    else:
-        try:
-            numList.sort()
-            # use only the last half of the list
-            half = numList[len(numList) // 2:]
-            # return the median of the upper half of the list
-            return median(half)
-          
-        except TypeError:
-            raise TypeError("Please provide numbers only")
-
-          
+            
 def lowerQuart(numList):
     '''
     Finds the median for the lower half of the sorted given list
@@ -163,7 +141,30 @@ def lowerQuart(numList):
         return "Illegal empty list"
     except:
         return "An error has occurred"
+     
+        
+#  the median of the upper half of the data set.
+def upperQuart(numList):
+    '''
+    :param numList: list of numbers
+    :return: float upper quartile of list
+    '''
 
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+
+    else:
+        try:
+            numList.sort()
+            # use only the last half of the list
+            half = numList[len(numList) // 2:]
+            # return the median of the upper half of the list
+            return median(half)
+          
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
+            
 
 def variance(numList):
     '''
