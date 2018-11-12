@@ -101,7 +101,7 @@ def mode(numList):
 
 
 # The exclusive range is the difference between the largest and smallest results in a data set
-def range(numList):
+def range_func(numList):
     '''
     Find range of a given list
     :param numList: list of ints
