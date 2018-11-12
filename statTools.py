@@ -1,4 +1,3 @@
-# Video must show red-green-blue parts, git commits are in present tense, fill out the column, want some tests to fail
 """
 -------------------------------------------------------------------------------
 Name:		statTools.py
@@ -8,23 +7,32 @@ Author:		E. Shi-Shun, G. Leung
 Created:		11/11/2018
 ------------------------------------------------------------------------------
 """
+
 # Measures of Central Tendency
 
-# the average value of all the data in the set
+
 def mean(numList):
+    '''
+    Finds the average value of all the data in the set
+
+    :param numList: List of numbers
+    :return: float The mean of the given list rounded to eight decimal places
+    '''
+
+    sum = 0
     try:
-        sum = 0
+        # adds each number in the list to an accumulator
         for i in range(len(numList)):
            sum += numList[i]
+
+        # returns the average of the numbers in the list
         return round(sum / len(numList), 8)
     except TypeError:
-        return "Must be list of numbers"
+        return "Must enter a list of numbers"
     except ZeroDivisionError:
-        return "The list length is zero"
-    except:
-        return "An error has occurred"
+        return "Illegal empty list causes division error"
 
-
+"""
 def median(numList):
     '''
     Find the median of a given list
@@ -42,6 +50,13 @@ def median(numList):
 
 # is the value that occurs most frequently in the set
 def mode(numList):
+    '''A description of the function
+
+     :param arg1: A description of the first argument
+     :param arg2: A description of the second argument
+     :return: A description of the return value
+     '''
+
    try:
        y = 0
        most = []
@@ -65,6 +80,14 @@ def mode(numList):
 
 #  the median of the lower half of the data set.
 def lowerQuart(numList):
+    '''A description of the function
+
+     :param arg1: A description of the first argument
+     :param arg2: A description of the second argument
+     :return: A description of the return value
+     '''
+
+
    try:
        numList.sort()
        mid = round((len(numList) + 0.1) / 2)
@@ -79,7 +102,14 @@ def lowerQuart(numList):
        return "An error has occurred"
 
 def variance(numList):
-    try:
+    '''
+    A description of the function
+
+     :param arg1: A description of the first argument
+     :param arg2: A description of the second argument
+     :return: A description of the return value
+     '''
+   try:
         if len(numList) == 1:
             raise TypeError
         else:
@@ -99,3 +129,4 @@ def variance(numList):
         return "The list length is zero"
     except:
         return "An error has occurred"
+"""

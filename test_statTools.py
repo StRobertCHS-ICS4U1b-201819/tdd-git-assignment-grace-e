@@ -41,11 +41,11 @@ def test_mean_negative():
 
 
 def test_mean_emptyList():
-    assert(mean([]) == "The list length is zero")
+    assert(mean([]) == "Illegal empty list causes division error")
 
 
 def test_mean_letters():
-    assert(mean(['h', 3, 1, 'l', 0]) == "Must be list of numbers")
+    assert(mean(['h', 3, 1, 'l', 0]) == "Must enter a list of numbers")
 
 
 def test_mean_variables():
