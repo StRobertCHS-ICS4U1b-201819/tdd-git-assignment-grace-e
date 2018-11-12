@@ -123,11 +123,11 @@ def test_lowerQuart_number():
 
 
 def test_lowerQuart_empty():
-    assert lowerQuart([]) == "This is an empty list"
+    assert lowerQuart([]) == "Illegal empty list"
 
 
 def test_lowerQuart_letters():
-    assert lowerQuart(['h', 'e', 'y', 'o']) == "Must be list of numbers"
+    assert lowerQuart(['h', 'e', 'y', 'o']) == "Must enter list of numbers"
 
 
 def test_lowerQuart_variables():

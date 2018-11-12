@@ -95,53 +95,60 @@ def mode(numList):
         return "An error has occurred"
 
 
-"""
 # Measures of Spread
+
 
 #  the median of the lower half of the data set.
 def lowerQuart(numList):
-    '''A description of the function
+    '''
+    Finds the median for the lower half of the sorted given list
 
-     :param arg1: A description of the first argument
-     :param arg2: A description of the second argument
-     :return: A description of the return value
-     '''
+    :param numList: List of numbers
+    :return: float The middle number of the lower half of a sorted list
+    '''
 
+    try:
+        # sorts the list and finds the point to split list in half
+        numList.sort()
+        mid = round((len(numList) + 0.1) / 2)
+        return median(numList[:mid])
+    except TypeError:
+        return "Must enter list of numbers"
+    except AttributeError:
+        return "This is not a list"
+    except ValueError:
+        return "Illegal empty list"
+    except:
+        return "An error has occurred"
 
-   try:
-       numList.sort()
-       mid = round((len(numList) + 0.1) / 2)
-       return median(numList[:mid])
-   except TypeError:
-       return "Must be list of numbers"
-   except AttributeError:
-       return "This is not a list"
-   except IndexError:
-       return "This is an empty list"
-   except:
-       return "An error has occurred"
 
 def variance(numList):
     '''
-    A description of the function
+    Solves the variance of a number from the mean of a given list
 
-     :param arg1: A description of the first argument
-     :param arg2: A description of the second argument
-     :return: A description of the return value
-     '''
-   try:
+    :param numList: List of numbers
+    :return: float The variance of the given list rounded to three decimal places
+    '''
+
+    try:
+        # does not solve for variance if there is only one number
         if len(numList) == 1:
             raise TypeError
         else:
+            # calculates the mean of the list
             sum = 0
-            for k in range(len(numList)):
-                sum += numList[k]
-            numMean = sum / len(numList)
-            acc2 = 0
             for i in range(len(numList)):
-                acc2 += (numList[i] - numMean) ** 2
-            x = acc2 / len(numList)
-            rounded = "{0:0.3f}".format(x)
+                sum += numList[i]
+            numMean = sum / len(numList)
+
+            # adds all the squares of the differences from the mean and stores it to an accumulator
+            sumSquares = 0
+            for j in range(len(numList)):
+                sumSquares += (numList[j] - numMean) ** 2
+
+            # divides the accumulator by the length of the list and rounds to three decimal places
+            finalVariance = sumSquares / len(numList)
+            rounded = "{0:0.3f}".format(finalVariance)
             return float(rounded)
     except TypeError:
         return "Must be list of numbers greater than one"
@@ -149,4 +156,3 @@ def variance(numList):
         return "The list length is zero"
     except:
         return "An error has occurred"
-"""
