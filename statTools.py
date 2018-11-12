@@ -1,5 +1,13 @@
 # Video must show red-green-blue parts, git commits are in present tense, fill out the column, want some tests to fail
-# commit after every test
+"""
+-------------------------------------------------------------------------------
+Name:		statTools.py
+Purpose:
+Statistical functions run on given lists
+Author:		E. Shi-Shun, G. Leung
+Created:		11/11/2018
+------------------------------------------------------------------------------
+"""
 # Measures of Central Tendency
 
 # the average value of all the data in the set
