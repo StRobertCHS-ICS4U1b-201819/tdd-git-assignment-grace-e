@@ -59,6 +59,12 @@ def test_range_basic3():
 def test_range_basic4_neg():
    assert(range([-8, -3, -9, -2]) == 7)
 
+def test_range_basic5():
+   assert(range([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
+
+def test_range_basic6():
+   assert(range([10000000000, 5554, 123, 0]) == 10000000000)
+
 def test_range_one():
    assert (range([1]) == 0)
 
