@@ -38,8 +38,11 @@ def median(numList):
             # return the number in the middle of the ordered list
             else:
                 return numList[middle]
+
         except TypeError:
             raise TypeError("Please provide numbers only")
+
+
 
 # Measures of Spread
 
@@ -70,6 +73,7 @@ def upperQuart(numList):
     :param numList: list of numbers
     :return: float upper quartile of list
     '''
+
     if len(numList) == 0:
         raise ValueError("Illegal empty list")
 
