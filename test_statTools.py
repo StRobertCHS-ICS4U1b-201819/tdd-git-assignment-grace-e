@@ -18,30 +18,30 @@ def test_median_basic1():
     assert(median([2, 4, 1, 5, 9]) == 4)
 
 def test_median_basic2():
-   assert(median([2, 4, 0, 6, 1]) == 2)
+    assert(median([2, 4, 0, 6, 1]) == 2)
 
 def test_median_basic3():
-   assert(median([2, 4, 1, 6]) == 3)
+    assert(median([2, 4, 1, 6]) == 3)
 
 def test_median_basic4():
-   assert(median([1, 2, 3, 4]) == 2.5)
+    assert(median([1, 2, 3, 4]) == 2.5)
 
 def test_median_basic5():
-   assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
+    assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
 
 def test_median_basic6():
-   assert(median([1000, 10, 1, 10000000]) == 505)
+    assert(median([1000, 10, 1, 10000000]) == 505)
 
 def test_median_one():
-   assert(median([1]) == 1)
+    assert(median([1]) == 1)
 
 def test_median_empty():
-   with pytest.raises(ValueError) as emptyerrmsg: median([])
-   assert("Illegal empty list" == str(emptyerrmsg.value))
+    with pytest.raises(ValueError) as emptyerrmsg: median([])
+    assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_median_input():
-   with pytest.raises(TypeError) as inputerrmsg: median(["no", "hi!"])
-   assert("Please provide numbers only" == str(inputerrmsg.value))
+    with pytest.raises(TypeError) as inputerrmsg: median(["no", "hi!"])
+    assert("Please provide numbers only" == str(inputerrmsg.value))
 
 
 
@@ -51,26 +51,26 @@ def test_range_basic1():
     assert(range([2, 4, 1, 5, 9]) == 8)
 
 def test_range_basic2():
-   assert(range([2, 4, 0, 6, 1]) == 6)
+    assert(range([2, 4, 0, 6, 1]) == 6)
 
 def test_range_basic3():
-   assert(range([2, 7, -3, 6, 1]) == 10)
+    assert(range([2, 7, -3, 6, 1]) == 10)
 
 def test_range_basic4_neg():
-   assert(range([-8, -3, -9, -2]) == 7)
+    assert(range([-8, -3, -9, -2]) == 7)
 
 def test_range_basic5():
-   assert(range([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
+    assert(range([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
 
 def test_range_basic6():
-   assert(range([10000000000, 5554, 123, 0]) == 10000000000)
+    assert(range([10000000000, 5554, 123, 0]) == 10000000000)
 
 def test_range_one():
-   assert (range([1]) == 0)
+    assert (range([1]) == 0)
 
 def test_range_empty():
-   with pytest.raises(ValueError) as emptyerrmsg: range([])
-   assert("Illegal empty list" == str(emptyerrmsg.value))
+    with pytest.raises(ValueError) as emptyerrmsg: range([])
+    assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_range_input():
     with pytest.raises(TypeError) as inputerrmsg: range(["hi", "hello", "hey"])
@@ -82,30 +82,30 @@ def test_upperQuart_basic1():
     assert(upperQuart([2, 4, 1, 5, 9]) == 5)
 
 def test_upperQuart_basic2():
-   assert(upperQuart([2, 4, 0, 6, 1]) == 4)
+    assert(upperQuart([2, 4, 0, 6, 1]) == 4)
 
 def test_upperQuart_basic3():
-   assert(upperQuart([2, 4, 1, 6, 0, 7]) == 6)
+    assert(upperQuart([2, 4, 1, 6, 0, 7]) == 6)
 
 def test_upperQuart_basic4():
-   assert(upperQuart([3, 4, 1, 7, 8, 6]) == 7)
+    assert(upperQuart([3, 4, 1, 7, 8, 6]) == 7)
 
 def test_upperQuart_basic5():
-   assert(upperQuart([2, 4, 1, 6]) == 5)
+    assert(upperQuart([2, 4, 1, 6]) == 5)
 
 def test_upperQuart_basic6():
-   assert(upperQuart([0.2, 4, 1, 6000200, 5]) == 5)
+    assert(upperQuart([0.2, 4, 1, 6000200, 5]) == 5)
 
 def test_upperQuart_one():
-   assert(upperQuart([1]) == 1)
+    assert(upperQuart([1]) == 1)
 
 def test_upperQuart_empty():
-   with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
-   assert("Illegal empty list" == str(emptyerrmsg.value))
+    with pytest.raises(ValueError) as emptyerrmsg: upperQuart([])
+    assert("Illegal empty list" == str(emptyerrmsg.value))
 
 def test_upperQuart_input():
-   with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
-   assert("Please provide numbers only" == str(inputerrmsg.value))
+    with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
+    assert("Please provide numbers only" == str(inputerrmsg.value))
 
 # standard deviation tests
 
@@ -117,6 +117,9 @@ def test_stanDev_basic2():
 
 def test_stanDev_basic3():
     assert(stanDev([-2, -4, 6, -7, 9]) == 6.09)
+
+def test_stanDev_basic3():
+    assert(stanDev([1100, 2323232323, 9, 0.2, 6, 5, 799]) == 812961851.68)
 
 def test_stanDev_one():
     assert(stanDev([10]) == 0)
