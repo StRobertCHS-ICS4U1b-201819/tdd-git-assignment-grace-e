@@ -68,17 +68,13 @@ def test_median_basic3():
 def test_median_basic4():
     assert(median([1, 2, 3, 4]) == 2.5)
 
-<<<<<<< grace-dev
     
 def test_median_basic5():
     assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
-=======
-def test_median_basic5():
-    assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
+
 
 def test_median_basic6():
     assert(median([1000, 10, 1, 10000000]) == 505)
->>>>>>> master
 
     
 def test_median_basic6():
