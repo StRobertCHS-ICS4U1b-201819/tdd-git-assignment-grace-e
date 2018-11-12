@@ -61,7 +61,7 @@ def test_mode_variable():
         assert(mode([e, n]) == "Variables have not been initialized")
 
 def test_more_than_one_modes():
-    assert(mode([0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == "There are multiple modes")
+    assert(mode([0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 9, 10, 11, 12, 12, 12]) == [2, 3, 4, 12])
 
 def test_lowerQuart1():
     assert(lowerQuart([1, 2, 3, 4, 4, 5, 20, 30, 40, 43]) == 3)
@@ -72,8 +72,20 @@ def test_lowerQuart2():
 def test_lowerQuart3():
     assert(lowerQuart([1, 2, 3, 4]) == 1.5)
 
+def test_lowerQuart4():
+    assert(lowerQuart([1, 2.5, 3.25, 7.4, 9]) == 2.5)
+
+def test_lowerQuartSmallList():
+    assert(lowerQuart([1, 2]) == 1)
+
+def test_lowerQuartSmallest():
+    assert(lowerQuart([9]) == 9)
+
+def test_lowerQuart8():
+    assert(lowerQuart(8) == "This is not a list")
+
 def test_lowerQuart_empty():
-    assert(lowerQuart([]) == "An error has occurred")
+    assert(lowerQuart([]) == "This is an empty list")
 
 def test_lowerQuart_letters():
     assert(lowerQuart(['h', 'e', 'y', 'o']) == "Must be list of numbers")

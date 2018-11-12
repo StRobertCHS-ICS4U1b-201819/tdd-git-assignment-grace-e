@@ -47,7 +47,7 @@ def mode(numList):
        if len(most) <= 1:
            return most[0]
        else:
-           return "There are multiple modes"
+           return most
    except ValueError:
        return "Must be list of numbers"
    except:
@@ -59,10 +59,14 @@ def mode(numList):
 def lowerQuart(numList):
    try:
        numList.sort()
-       mid = round((len(numList) / 2))
+       mid = round((len(numList) + 0.1) / 2)
        return median(numList[:mid])
    except TypeError:
        return "Must be list of numbers"
+   except AttributeError:
+       return "This is not a list"
+   except IndexError:
+       return "This is an empty list"
    except:
        return "An error has occurred"
 
