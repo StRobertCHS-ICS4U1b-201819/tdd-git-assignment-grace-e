@@ -137,36 +137,36 @@ def test_range_basic1():
 
     
 def test_range_basic2():
-    assert(range([2, 4, 0, 6, 1]) == 6)
+    assert(range_func([2, 4, 0, 6, 1]) == 6)
 
     
 def test_range_basic3():
-    assert(range([2, 7, -3, 6, 1]) == 10)
+    assert(range_func([2, 7, -3, 6, 1]) == 10)
 
     
 def test_range_basic4_neg():
-    assert(range([-8, -3, -9, -2]) == 7)
+    assert(range_func([-8, -3, -9, -2]) == 7)
 
     
 def test_range_basic5():
-    assert(range([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
+    assert(range_func([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
 
     
 def test_range_basic6():
-    assert(range([10000000000, 5554, 123, 0]) == 10000000000)
+    assert(range_func([10000000000, 5554, 123, 0]) == 10000000000)
 
     
 def test_range_one():
-    assert (range([1]) == 0)
+    assert (range_func([1]) == 0)
 
     
 def test_range_empty():
-    with pytest.raises(ValueError) as emptyerrmsg: range([])
+    with pytest.raises(ValueError) as emptyerrmsg: range_func([])
     assert("Illegal empty list" == str(emptyerrmsg.value))
 
     
 def test_range_input():
-    with pytest.raises(TypeError) as inputerrmsg: range(["hi", "hello", "hey"])
+    with pytest.raises(TypeError) as inputerrmsg: range_func(["hi", "hello", "hey"])
     assert("Please provide numbers only" == str(inputerrmsg.value))
 
 # tests for lower quartile function
