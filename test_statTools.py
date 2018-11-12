@@ -133,7 +133,7 @@ def test_multiple_modes():
 
 #range tests
 def test_range_basic1():
-    assert(range([2, 4, 1, 5, 9]) == 8)
+    assert(range_func([2, 4, 1, 5, 9]) == 8)
 
     
 def test_range_basic2():
