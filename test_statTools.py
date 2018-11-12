@@ -106,6 +106,9 @@ def test_variance3():
 def test_variance4():
     assert(variance([1, 2, 3, 10]) == 12.5)
 
+def test_varianceUniform():
+    assert(variance([8, 8, 8, 8, 8, 8]) == 0)
+
 def test_varianceSingle():
     assert(variance([3]) == "Must be list of numbers greater than one")
 
