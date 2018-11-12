@@ -8,7 +8,7 @@ def mean(numList):
         sum = 0
         for i in range(len(numList)):
            sum += numList[i]
-        return round(sum / len(numList), 5)
+        return round(sum / len(numList), 8)
     except TypeError:
         return "Must be list of numbers"
     except ZeroDivisionError:
@@ -72,14 +72,22 @@ def lowerQuart(numList):
 
 def variance(numList):
     try:
-        acc2 = 0
-        numMean = mean(numList)
-        for i in range(len(numList)):
-            acc2 += (numList[i] - numMean) ** 2
-        x = acc2 / len(numList)
-        rounded = "{0:0.3f}".format(x)
-        return float(rounded)
+        if len(numList) == 1:
+            raise TypeError
+        else:
+            sum = 0
+            for k in range(len(numList)):
+                sum += numList[k]
+            numMean = sum / len(numList)
+            acc2 = 0
+            for i in range(len(numList)):
+                acc2 += (numList[i] - numMean) ** 2
+            x = acc2 / len(numList)
+            rounded = "{0:0.3f}".format(x)
+            return float(rounded)
     except TypeError:
-        return "Must be list of numbers"
+        return "Must be list of numbers greater than one"
     except ZeroDivisionError:
         return "The list length is zero"
+    except:
+        return "An error has occurred"

@@ -8,10 +8,10 @@ def test_mean2():
     assert(mean([5, 5, 4, 54, 3, 1, 10, 7, 9, 2]) == 10)
 
 def test_mean3():
-    assert(mean([8, 7, 6, 8, 9, 10, 12, 30, 12, 24, 50, 30, 11]) == 16.69231)
+    assert(mean([8, 7, 6, 8, 9, 10, 12, 30, 12, 24, 50, 30, 11]) == 16.69230769)
 
 def test_mean4():
-    assert(mean([100, 30, 20, 60, 44, 66, 55, 22, 1, 2, 3, 4]) == 33.91667)
+    assert(mean([100, 30, 20, 60, 44, 66, 55, 22, 1, 2, 3, 4]) == 33.91666667)
 
 def test_mean5():
     assert(mean([1.2, 3.4, 5.6, 7.8, 7.6, 9.1, 12.2]) == 6.7)
@@ -20,7 +20,7 @@ def test_mean6():
     assert(mean([1.4, 50, 10000, 500, 6.6, 1.1, 3.3, 6.5]) == 1321.1125)
 
 def test_mean_negative():
-    assert(mean([-3, -6, -2, -4, -4.3, -10.1, 8]) == -3.05714 )
+    assert(mean([-3, -6, -2, -4, -4.3, -10.1, 8]) == -3.05714286)
 
 def test_mean_emptyList():
     assert(mean([]) == "The list length is zero")
@@ -73,7 +73,7 @@ def test_lowerQuart3():
     assert(lowerQuart([1, 2, 3, 4]) == 1.5)
 
 def test_lowerQuart4():
-    assert(lowerQuart([1, 2.5, 3.25, 7.4, 9]) == 2.5)
+    assert(lowerQuart([8, 2.5, 3.25, 7.4, 9, 1, 99]) == 2.875)
 
 def test_lowerQuartSmallList():
     assert(lowerQuart([1, 2]) == 1)
@@ -100,11 +100,20 @@ def test_variance1():
 def test_variance2():
     assert(variance([0, 4, 4, 7, 7, 7, 8, 8, 8, 9, 9, 11, 11, 11]) == 8.816)
 
+def test_variance3():
+    assert(variance([-117, -4.5, -3, -3, -2.9, -1, 2, 99]) == 2928.267)
+
+def test_variance4():
+    assert(variance([1, 2, 3, 10]) == 12.5)
+
+def test_varianceSingle():
+    assert(variance([3]) == "Must be list of numbers greater than one")
+
 def test_variance_empty():
     assert(variance([]) == "The list length is zero")
 
 def test_variance_letters():
-    assert(variance(['h', 'e', 'n', 'y', 'l', 'o']) == "Must be list of numbers")
+    assert(variance(['h', 'e', 'n', 'y', 'l', 'o']) == "Must be list of numbers greater than one")
 
 def test_variance_variable():
     with pytest.raises(NameError):
