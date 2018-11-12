@@ -32,50 +32,70 @@ def mean(numList):
     except ZeroDivisionError:
         return "Illegal empty list causes division error"
 
-"""
+
+#  the middle value in a data set that has been arranged in numerical order
 def median(numList):
     '''
     Find the median of a given list
+
     :param numList: list of ints
     :return: float median of list
     '''
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
 
-    numList.sort()
-    middle = len(numList) // 2
-
-    if (len(numList) % 2 == 0):
-        return (numList[middle] + numList[middle - 1]) / 2
     else:
-        return numList[middle]
+        try:
+            numList.sort()
+            middle = len(numList) // 2
 
-# is the value that occurs most frequently in the set
+            #if list is even then find the midpoint of the two middle numbers
+            if(len(numList) % 2 == 0):
+                return (numList[middle] + numList[middle - 1]) / 2
+
+            # return the number in the middle of the ordered list
+            else:
+                return numList[middle]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
+
 def mode(numList):
-    '''A description of the function
+    '''
+    Finds the value(s) the occur most often in a given list
 
-     :param arg1: A description of the first argument
-     :param arg2: A description of the second argument
-     :return: A description of the return value
-     '''
+    :param numList: List of numbers
+    :return: float The single value that occurs the most or a list of value(s) the occur equally the most
+    '''
 
-   try:
-       y = 0
-       most = []
-       for i in range(len(numList)):
-            if numList.count(numList[i]) > y:
-                y = numList.count(float(numList[i]))
-                most = []
-                most.append(float(numList[i]))
-            elif numList.count(numList[i]) == y and numList[i] not in most:
-                most.append(float(numList[i]))
-       if len(most) <= 1:
-           return most[0]
-       else:
-           return most
-   except ValueError:
-       return "Must be list of numbers"
-   except:
-       return "An error has occurred"
+    occursMost = 0
+    modeList = []
+    try:
+        for i in range(len(numList)):
+            numAmount = numList.count(numList[i])
 
+            # checks to see if a number occurs more than the previous ones
+            if numAmount > occursMost:
+                occursMost = numList.count(float(numList[i]))
+                modeList = []
+                modeList.append(float(numList[i]))
+
+            # if there are multiple modes, it will add them to the list
+            elif numAmount == occursMost and numList[i] not in modeList:
+                modeList.append(float(numList[i]))
+
+        # returns the mode or list of modes
+        if len(modeList) <= 1:
+            return modeList[0]
+        else:
+            return modeList
+    except ValueError:
+        return "Must enter a list of numbers"
+    except:
+        return "An error has occurred"
+
+
+"""
 # Measures of Spread
 
 #  the median of the lower half of the data set.
