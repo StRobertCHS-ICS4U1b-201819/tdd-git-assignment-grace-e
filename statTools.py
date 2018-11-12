@@ -8,6 +8,8 @@ Created:		11/11/2018
 ------------------------------------------------------------------------------
 """
 
+import math
+
 # Measures of Central Tendency
 
 
@@ -32,7 +34,7 @@ def mean(numList):
     except ZeroDivisionError:
         return "Illegal empty list causes division error"
 
-
+      
 #  the middle value in a data set that has been arranged in numerical order
 def median(numList):
     '''
@@ -67,7 +69,7 @@ def mode(numList):
     :param numList: List of numbers
     :return: float The single value that occurs the most or a list of value(s) the occur equally the most
     '''
-
+    
     occursMost = 0
     modeList = []
     try:
@@ -94,11 +96,51 @@ def mode(numList):
     except:
         return "An error has occurred"
 
-
+      
 # Measures of Spread
 
 
-#  the median of the lower half of the data set.
+# The exclusive range is the difference between the largest and smallest results in a data set
+def range(numList):
+    '''
+    Find range of a given list
+    :param numList: list of ints
+    :return: float range of list
+    '''
+    
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+    else:
+        try:
+            numList.sort()
+            # return the difference between the highest and lowest number
+            return numList[-1] - numList[0]
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
+
+#  the median of the upper half of the data set.
+def upperQuart(numList):
+    '''
+    :param numList: list of numbers
+    :return: float upper quartile of list
+    '''
+    
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+
+    else:
+        try:
+            numList.sort()
+            # use only the last half of the list
+            half = numList[len(numList) // 2:]
+            # return the median of the upper half of the list
+            return median(half)
+          
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+
+          
 def lowerQuart(numList):
     '''
     Finds the median for the lower half of the sorted given list
@@ -106,7 +148,7 @@ def lowerQuart(numList):
     :param numList: List of numbers
     :return: float The middle number of the lower half of a sorted list
     '''
-
+    
     try:
         # sorts the list and finds the point to split list in half
         numList.sort()
@@ -129,7 +171,7 @@ def variance(numList):
     :param numList: List of numbers
     :return: float The variance of the given list rounded to three decimal places
     '''
-
+   
     try:
         # does not solve for variance if there is only one number
         if len(numList) == 1:
@@ -156,3 +198,29 @@ def variance(numList):
         return "The list length is zero"
     except:
         return "An error has occurred"
+
+      
+def stanDev(numList):
+    '''
+    solve for the standard deviation of a given list
+
+    :param numList: list of numbers
+    :return: float standard deviation of list
+    '''
+
+    if len(numList) == 0:
+        raise ValueError("Illegal empty list")
+    else:
+        try:
+            mean = sum(numList) / len(numList)
+            meanDiff = 0
+
+            # find the sum of the squares of the differences between the list elements and the mean
+            for i in numList:
+                meanDiff += ((mean - i) ** 2)
+
+            # return the squareroot of the mean of the total
+            return round(math.sqrt(meanDiff / len(numList)), 2)
+        except TypeError:
+            raise TypeError("Please provide numbers only")
+ 
