@@ -71,12 +71,12 @@ def test_median_basic4():
     
 def test_median_basic5():
     assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
-
     
+
 def test_median_basic6():
     assert(median([1000, 10, 1, 10000000]) == 505)
 
-    
+   
 def test_median_one():
     assert(median([1]) == 1)
 
@@ -235,7 +235,7 @@ def test_upperQuart_basic5():
 def test_upperQuart_basic6():
     assert(upperQuart([0.2, 4, 1, 6000200, 5]) == 5)
 
-    
+ 
 def test_upperQuart_one():
     assert(upperQuart([1]) == 1)
 

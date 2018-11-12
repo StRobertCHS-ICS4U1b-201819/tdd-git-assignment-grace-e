@@ -58,6 +58,7 @@ def median(numList):
             # return the number in the middle of the ordered list
             else:
                 return numList[middle]
+
         except TypeError:
             raise TypeError("Please provide numbers only")
 
@@ -95,8 +96,7 @@ def mode(numList):
         return "Must enter a list of numbers"
     except:
         return "An error has occurred"
-
-      
+ 
 # Measures of Spread
 
 
@@ -118,7 +118,30 @@ def range(numList):
         except TypeError:
             raise TypeError("Please provide numbers only")
 
+            
+def lowerQuart(numList):
+    '''
+    Finds the median for the lower half of the sorted given list
 
+    :param numList: List of numbers
+    :return: float The middle number of the lower half of a sorted list
+    '''
+    
+    try:
+        # sorts the list and finds the point to split list in half
+        numList.sort()
+        mid = round((len(numList) + 0.1) / 2)
+        return median(numList[:mid])
+    except TypeError:
+        return "Must enter list of numbers"
+    except AttributeError:
+        return "This is not a list"
+    except ValueError:
+        return "Illegal empty list"
+    except:
+        return "An error has occurred"
+     
+        
 #  the median of the upper half of the data set.
 def upperQuart(numList):
     '''
@@ -140,7 +163,7 @@ def upperQuart(numList):
         except TypeError:
             raise TypeError("Please provide numbers only")
 
-          
+      
 def lowerQuart(numList):
     '''
     Finds the median for the lower half of the sorted given list
@@ -223,4 +246,3 @@ def stanDev(numList):
             return round(math.sqrt(meanDiff / len(numList)), 2)
         except TypeError:
             raise TypeError("Please provide numbers only")
- 
