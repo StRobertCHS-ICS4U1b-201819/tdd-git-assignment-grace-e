@@ -76,11 +76,7 @@ def test_median_basic5():
 def test_median_basic6():
     assert(median([1000, 10, 1, 10000000]) == 505)
 
-    
-def test_median_basic6():
-    assert(median([1000, 10, 1, 10000000]) == 505)
-
-    
+   
 def test_median_one():
     assert(median([1]) == 1)
 
@@ -311,9 +307,6 @@ def test_stanDev_basic3():
 def test_stanDev_basic4():
     assert(stanDev([1100, 2323232323, 9, 0.2, 6, 5, 799]) == 812961851.68)
 
-
-def test_stanDev_basic3():
-    assert(stanDev([1100, 2323232323, 9, 0.2, 6, 5, 799]) == 812961851.68)
 
 def test_stanDev_one():
     assert(stanDev([10]) == 0)
