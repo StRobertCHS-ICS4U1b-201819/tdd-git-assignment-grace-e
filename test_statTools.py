@@ -71,7 +71,7 @@ def test_median_basic4():
     
 def test_median_basic5():
     assert(median([0.1, 0.2, 0.3, 0.4, 0.5]) == 0.3)
-
+    
 
 def test_median_basic6():
     assert(median([1000, 10, 1, 10000000]) == 505)
@@ -151,7 +151,7 @@ def test_range_basic4_neg():
 def test_range_basic5():
     assert(range([0.00001, 0.0003, 0.0002, 1.00001]) == 1)
 
-
+    
 def test_range_basic6():
     assert(range([10000000000, 5554, 123, 0]) == 10000000000)
 
@@ -235,7 +235,7 @@ def test_upperQuart_basic5():
 def test_upperQuart_basic6():
     assert(upperQuart([0.2, 4, 1, 6000200, 5]) == 5)
 
-    
+ 
 def test_upperQuart_one():
     assert(upperQuart([1]) == 1)
 
@@ -248,8 +248,8 @@ def test_upperQuart_empty():
 def test_upperQuart_input():
     with pytest.raises(TypeError) as inputerrmsg: upperQuart(["a", "b", "c"])
     assert("Please provide numbers only" == str(inputerrmsg.value))
- 
 
+    
 # tests for variance function
 def test_variance_basic1():
     assert variance([3, 4, 5, 5, 6, 7, 9]) == 3.388
